@@ -62,11 +62,7 @@ To see something it's better to add some CSS, like
 ```javascript
 myAppModule.controller('MapCtrl', ['$scope', function ($scope) {
     $scope.mapOptions = {
-      center: new AMap.LngLat(-78.670, 35.784),
-
-      // map-self config
       center: new qq.maps.LatLng(lat, lng),
-
       // ui map config
       uiMapCache: true // 是否使用缓存来缓存此map dom，而不是每次链接跳转来都重新创建
     };
