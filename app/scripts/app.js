@@ -1,8 +1,12 @@
 'use strict';
 
 angular.module('githubApp', ['ui.map'])
-  .config(function () {
-  })
+  .config(['uiMapLoadParamsProvider', function (uiMapLoadParamsProvider) {
+        uiMapLoadParamsProvider.setParams({
+            v: '2.0',
+            key:'XXXX'// your map's develop key
+        });
+  }])
     .controller('MapCtrl', ['$scope', function ($scope) {
         $scope.myMarkers = [];
 
@@ -17,7 +21,7 @@ angular.module('githubApp', ['ui.map'])
             resizeEnable: true,
             // ui map config
             uiMapCache: true
-        }
+        };
 
         $scope.addMarker = function ($event, $params) {
             $scope.myMarkers.push(new qq.maps.Marker({
