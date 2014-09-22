@@ -40,7 +40,7 @@
                         }
                     });
 
-                    if($window.qq&&$window.qq.maps) {
+                    if($window.qq&&$window.qq.maps&&$window.qq.maps.Map) {
                         initMap();
                     }
 
@@ -82,7 +82,7 @@
                         }
                     });
 
-                    if($window.qq&&$window.qq.maps) {
+                    if($window.qq&&$window.qq.maps&&$window.qq.maps.Map) {
                         initInfoWindow();
                     }
 
@@ -163,7 +163,7 @@
 
                     params.callback = "mapqqLoadedCallback";
 
-                    if(!($window.qq&&$window.qq.maps)) {
+                    if(!($window.qq&&$window.qq.maps&&$window.qq.maps.Map)) {
                         var script = document.createElement("script");
                         script.type = "text/javascript";
                         script.src = "http://map.qq.com/api/js?" + param(params);
