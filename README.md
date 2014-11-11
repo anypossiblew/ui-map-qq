@@ -1,14 +1,10 @@
-# qq map for angular ui [![Build Status](https://secure.travis-ci.org/yeoman/generator-jquery.svg?branch=master)](https://travis-ci.org/yeoman/generator-jquery)
+# qq map for angular ui [![GitHub version](https://badge.fury.io/gh/anypossiblew%2Fui-map-qq.svg)](http://badge.fury.io/gh/anypossiblew%2Fui-map-qq) [![Bower version](https://badge.fury.io/bo/angular-ui-map-qq.svg)](http://badge.fury.io/bo/angular-ui-map-qq)
 
-本项目使用Yeoman generator生成的，过程如下：
-## 创建项目过程
-- Prepare: `npm install -g yo grunt-cli bower`
-- Install: `npm install -g generator-angular`
-- Run: `yo angular`
-- Perform a build: `grunt`
-- Run local server: `grunt serve`
+## Demos
+qq map for angular ui demo and documents: 
+[http://anypossiblew.github.io/ui-map-qq/](http://anypossiblew.github.io/ui-map-qq/)
 
-## Usage
+## Get started
 You can get it from [Bower](http://bower.io/)
 
 ```sh
@@ -19,7 +15,7 @@ This will copy the UI.Map.qq files into a `bower_components` folder, along with 
 
 ```html
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="bower_components/angular-ui-utils/modules/event/event.js "></script>
+<script type="text/javascript" src="bower_components/angular-ui-utils/modules/event/event.js"></script>
 <script type="text/javascript" src="bower_components/angular-ui-map-qq/ui-map.js"></script>
 <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=YOUR_KEY"></script>
 ```
@@ -28,7 +24,7 @@ This will copy the UI.Map.qq files into a `bower_components` folder, along with 
 #### 方法一
 __Make sure to listen to the [callback parameter when loading the qq Maps API](http://open.map.qq.com/javascript_v2/case-run.html#sample-map-async) !
 The API must be fully loaded before this module !__
-Here we name this callback `init`. To load your angular app after the Gaode Maps API you can start it with [angular.bootstrap](http://docs.angularjs.org/api/angular.bootstrap).
+Here we name this callback `init`. To load your angular app after the qq Maps API you can start it with [angular.bootstrap](http://docs.angularjs.org/api/angular.bootstrap).
 
 ```javascript
 function init() {
@@ -102,7 +98,13 @@ For example, the _click_ or *idle* event of the [qq.maps.Map class](http://open.
 </section>
 ```
 
-
+## 创建项目过程
+本项目使用Yeoman generator生成的，过程如下：
+- Prepare: `npm install -g yo grunt-cli bower`
+- Install: `npm install -g generator-angular`
+- Run: `yo angular`
+- Perform a build: `grunt`
+- Run local server: `grunt serve`
 ## Testing
 
 We use Karma and jshint to ensure the quality of the code.  The easiest way to run these checks is to use grunt:
