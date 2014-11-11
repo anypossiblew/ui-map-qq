@@ -1,0 +1,17 @@
+{
+  "name": "angular-ui-event",
+  "main": "./event.js",
+  "dependencies": {
+    "angular": ">= 1.0.2"
+  },
+  "homepage": "https://github.com/angular-ui/ui-utils",
+  "_release": "event-0.1.0",
+  "_resolution": {
+    "type": "tag",
+    "tag": "event-0.1.0",
+    "commit": "cfbbd0459a0ed172f3eae046327a888d183f31d1"
+  },
+  "_source": "git://github.com/angular-ui/ui-utils.git",
+  "_target": "event-0.1.0",
+  "_originalSource": "angular-ui-utils"
+}

@@ -1,0 +1,54 @@
+{
+  "author": "anypossiblew",
+  "name": "angular-ui-map-qq",
+  "version": "1.1.2",
+  "authors": [
+    "anypossiblew <anypossible.w@gmail.com>"
+  ],
+  "keywords": [
+    "angular",
+    "angularui",
+    "map",
+    "qq"
+  ],
+  "main": "./ui-map.js",
+  "dependencies": {
+    "angular": "1.2.6",
+    "angular-ui-utils": "event-0.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.6",
+    "angular-scenario": "1.2.6",
+    "json3": "~3.2.6",
+    "es5-shim": "~2.1.0",
+    "jquery": "~1.10.2",
+    "sass-bootstrap": "~3.0.2",
+    "angular-resource": "1.2.6",
+    "angular-cookies": "1.2.6",
+    "angular-sanitize": "1.2.6",
+    "angular-route": "1.2.6"
+  },
+  "ignore": [
+    "app",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "gruntFile.js",
+    "package.json",
+    "publish.js",
+    "README.md"
+  ],
+  "homepage": "https://github.com/anypossiblew/ui-map-qq",
+  "_release": "1.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.2",
+    "commit": "3d4d8dbde9a470d3ddb0a0d5a91340130a913617"
+  },
+  "_source": "git://github.com/anypossiblew/ui-map-qq.git",
+  "_target": "~1.1.2",
+  "_originalSource": "angular-ui-map-qq",
+  "_direct": true
+}
