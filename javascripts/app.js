@@ -7,13 +7,19 @@ angular.module('githubApp', ['ui.map'])
     .config(['uiMapLoadParamsProvider', function (uiMapLoadParamsProvider) {
         uiMapLoadParamsProvider.setParams({
             v: '2.0',
-            key:'XXXX'// your map's develop key
+            key: 'XXXX'// your map's develop key
         });
     }])
     .controller('MapCtrl', ['$scope', function ($scope) {
         $scope.myMarkers = [];
 
         $scope.mapOptions = {
+            // angular自定义配置 （南京铁道职业技术学院）
+            ngCenter: {
+                lat: 32.1,
+                lng: 118.7
+            },
+            ngZoom: 15,
             // map plugin config
             toolbar: true,
             scrollzoom: true,
@@ -52,8 +58,8 @@ angular.module('githubApp', ['ui.map'])
             marker.setPosition(new qq.maps.LatLng(lat, lng));
         };
 
-        $scope.$on("map.loaded", function(e, type) {
-            if(type == "qq") {
+        $scope.$on("map.loaded", function (e, type) {
+            if (type == "qq") {
                 $scope.showMap = true;
             }
         });

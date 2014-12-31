@@ -176,6 +176,22 @@ myAppModule.controller('MapCtrl', ['$scope', function ($scope) {
   }]);
           </pre>
 
+          <h4>ngCenter ngZoom</h4>
+          <p>使用自定义的属性ngCenter设置地图初始化的中心坐标点，ngZoom属性设置地图初始化zoom</p>
+<pre>
+myAppModule.controller('MapCtrl', ['$scope', function ($scope) {
+    $scope.mapOptions = {
+      // 地图配置
+      mapTypeId: qq.maps.MapTypeId.ROADMAP,
+      // angular自定义地图配置
+      ngCenter: {
+        lat: 33,
+        lng: 120
+      },
+      ngZoom: 5
+    };
+  }]);
+</pre>
           <h3>UI.Event</h3>
           <p>
               使用<a href="http://angular-ui.github.io/ui-utils/#/event">UI.Event</a>插件可以自定义用户操作事件的响应处理逻辑，只需要在原事件名前加上'map-'以绑定响应事件。
